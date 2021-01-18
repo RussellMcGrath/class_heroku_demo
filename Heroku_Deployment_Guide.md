@@ -125,7 +125,7 @@ web: gunicorn pet_pals.app:app
 
   * In the Deployment Method section select **GitHub**.
 
- ![images/deploy01.jpg](images/deploy01.jpg)
+  ![images/deploy01.JPG](images/deploy01.JPG)
 
   * Follow the steps to link Heroku with your GitHub account
 
@@ -141,11 +141,11 @@ web: gunicorn pet_pals.app:app
 
 * After creating a new app on Heroku, navigate to `Resources`:
 
-  ![images/deploy02.jpg](images/deploy02.jpg)
+  ![images/deploy02.JPG](images/deploy02.JPG)
 
   * Under `Add-ons`, search `Heroku Postgres`. Make sure to use the free version then click `Submit Order Form`.
 
-  ![images/deploy03.jpg](images/deploy03.jpg)
+  ![images/deploy03.JPG](images/deploy03.JPG)
 
 * Once `Heroku Postgres` is listed on click on it.
 
@@ -153,7 +153,7 @@ web: gunicorn pet_pals.app:app
 
 * The connection string to the database should now be available in the **URI** field:
 
-  ![images/deploy04.jpg](images/deploy04.jpg)
+  ![images/deploy04.JPG](images/deploy04.JPG)
 
 * Heroku will automatically assign this URI string to the `DATABASE_URL` environment variable that is used within `app.py`. The code that is already in `app.py` will be able to use that environment variable to connect to the Heroku database.
 
