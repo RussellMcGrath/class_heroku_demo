@@ -23,7 +23,7 @@
 * Start by creating a new conda environment just for this app. All of our project dependencies will be installed in this environment. **Note:** This should only contain python 3.6 and not anaconda.
 
 ```sh
-conda create -n pet_pals_env python=3.6
+conda create -n example_env python=3.6
 ```
 
 * Make sure to activate this new environment before proceeding.
@@ -105,10 +105,8 @@ touch Procfile
 * Add the following code to the `Procfile` which instructs Heroku how to run the app.
   
 ```sh  
-web: gunicorn pet_pals.app:app
+web: gunicorn app:app
 ```
-
-* `pet_pals` is the name of the folder that contains your app as a python package (i.e. the name of the folder with the `__init__.py` file in it).
 
 * Add, commit and push everything up to your repo.
 
